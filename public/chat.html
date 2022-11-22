@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anon Chat Room</title>
+	<link rel="stylesheet" href="chat.css">
+	<script src="/socket.io/socket.io.js" defer></script>
+	<script src="chat.js" defer></script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<button id="leave">Leave Room</button>
+		</header>
+		<div id="room-mates">
+			<div id="room-mates-header">Room Mates</div>
+		</div>
+		<div id="conversation-container"></div>
+		<div id="form-container">
+			<form action="chat.html">
+				<textarea id="chat-area" placeholder="Enter message"></textarea>
+				<button id="send" type="submit">Send</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
